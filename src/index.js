@@ -1,3 +1,7 @@
 import './styles.css'
+import { selectData } from './fetch_weather'
+import { setEventListeners } from './dom'
 
-console.log('hello there nice to meet you')
+selectData('hong kong')
+
+setEventListeners()
