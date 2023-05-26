@@ -1,7 +1,7 @@
 import './styles.css'
 import { selectData } from './fetch_weather'
-import { setEventListeners } from './dom'
+import { setEventListeners, displayData } from './dom'
 
-selectData('hong kong')
+displayData('warsaw')
 
 setEventListeners()
