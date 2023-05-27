@@ -7,6 +7,7 @@ const temperatureParagraph = document.querySelector('.temperature')
 const sunriseParagraph = document.querySelector('.sunrise')
 const sunsetParagraph = document.querySelector('.sunset')
 const weatherIcon = document.querySelector('.weather-icon')
+const checkbox = document.querySelector('.temp')
 
 let mode = 'celcius'
 
@@ -14,9 +15,11 @@ function switchMode () {
   switch (mode) {
     case 'celcius':
       mode = 'fahrenheit'
+      console.log(mode)
       break
     case 'fahrenheit':
-      mode = celcius
+      mode = 'celcius'
+      console.log(mode)
       break
   }
 }
@@ -50,5 +53,10 @@ export const setEventListeners = () => {
       displayData(e.target.value)
       e.target.value = ''
     }
+  })
+
+  checkbox.addEventListener('change', () => {
+    switchMode()
+    displayData(locationParagraph.textContent)
   })
 }
