@@ -12,6 +12,9 @@ export async function fetchWeather (location) {
 
 export async function selectData (location) {
   try {
+    if (location === '') {
+      throw new Error('location can\'t be empty')
+    }
     const data = await fetchWeather(location)
     console.log(data)
 

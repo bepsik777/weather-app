@@ -9,7 +9,7 @@ const sunsetParagraph = document.querySelector('.sunset')
 const weatherIcon = document.querySelector('.weather-icon')
 const checkbox = document.querySelector('.temp')
 
-let mode = 'celcius'
+let mode = 'fahrenheit'
 
 function switchMode () {
   switch (mode) {
