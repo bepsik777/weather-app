@@ -52,7 +52,7 @@ p.location {
 }
 
 .sunrise::after {
-    background-image: url(/icons/sunrise.png);
+    background-image: url(./icons/sunrise.png);
     background-size: 20px 20px;
     display: inline-block;
     width: 20px; 
@@ -62,7 +62,7 @@ p.location {
 }
 
 .sunset::after {
-    background-image: url(/icons/sunset.png);
+    background-image: url(./icons/sunset.png);
     background-size: 23px 23px;
     display: inline-block;
     width: 23px; 
