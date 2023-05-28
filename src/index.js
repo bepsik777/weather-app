@@ -1,5 +1,4 @@
-import css from './styles.css'
-import { selectData } from './fetch_weather'
+import './styles.css'
 import { setEventListeners, displayData } from './dom'
 
 displayData('warsaw')
